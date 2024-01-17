@@ -17,7 +17,7 @@ public class EnergieController {
         this.energieService = energieService;
     }
 
-    @PostMapping(path = "insert")
+    @PostMapping(path = "insert", consumes = APPLICATION_JSON_VALUE)
     public void insert(@RequestBody Energie energie){ this.energieService.insert(energie);}
 
     @ResponseStatus(NO_CONTENT)
