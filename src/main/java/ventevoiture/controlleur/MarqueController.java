@@ -24,7 +24,7 @@ public class MarqueController {
         this.marqueService.creer(marque);
     }
 
-    @GetMapping(path="get",produces = APPLICATION_JSON_VALUE)
+    @GetMapping(path="ge",produces = APPLICATION_JSON_VALUE)
     public List<Marque> getALl(){
         return marqueService.getAll();
     }
